@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site Blocked - Tab Zen</title>
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f3f4f6; 
+            color: #1f2937; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            text-align: center; 
+        }
+        .container { 
+            max-width: 500px; 
+            padding: 2rem; 
+            background-color: white; 
+            border-radius: 0.75rem; 
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); 
+        }
+        h1 { font-size: 2.25rem; font-weight: 700; color: #111827; }
+        p { font-size: 1.125rem; margin-top: 1rem; color: #4b5563; }
+        /* Dark Mode Styles */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111827;
+                color: #f9fafb;
+            }
+            .container {
+                background-color: #1f2937;
+                box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+            }
+            h1 { color: #f9fafb; }
+            p { color: #d1d5db; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stay Focused.</h1>
+        <p>This website is on your blocklist. Your focus session is active.</p>
+    </div>
+</body>
+</html>

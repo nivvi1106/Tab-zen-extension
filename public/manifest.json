@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Zen",
+  "version": "1.2.0",
+  "description": "A mindful productivity companion for deep work and intentional Browse.",
+  "permissions": [
+    "storage",
+    "alarms",
+    "tabs",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+  },
+  "options_ui": {
+    "page": "index.html#/settings",
+    "open_in_tab": true
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "blocked.html", 
+        "assets/*",
+        "icons/*.png",
+        "alarm.mp3",
+        "offscreen.html",
+        "offscreen.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
